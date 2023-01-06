@@ -1,0 +1,20 @@
+{
+    "name": "sk1t0n/handling-google-api-in-php",
+    "description": "Handling Google API in PHP using the google/apiclient package.",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sk1t0n\\HandlingGoogleApiInPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Anton Grabovsky",
+            "email": "agrabovsky2020@gmail.com"
+        }
+    ],
+    "require": {
+        "google/apiclient": "2.12.1"
+    }
+}
