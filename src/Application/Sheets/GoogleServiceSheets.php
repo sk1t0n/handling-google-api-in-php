@@ -1,9 +1,9 @@
 <?php
 
-namespace Sk1t0n\HandlingGoogleApiInPhp\Application;
+namespace Sk1t0n\HandlingGoogleApiInPhp\Application\Sheets;
 
 use \GuzzleHttp\Client as GuzzleClient;
-use Sk1t0n\HandlingGoogleApiInPhp\Domain\Spreadsheet;
+use Sk1t0n\HandlingGoogleApiInPhp\Entities\Spreadsheet;
 
 class GoogleServiceSheets
 {    
@@ -39,7 +39,7 @@ class GoogleServiceSheets
         $this->client->setScopes([\Google_Service_Sheets::SPREADSHEETS]);
         $this->client->setAccessType('offline');
 
-        $credentials = 'data' . DIRECTORY_SEPARATOR . 'credentials.json';
+        $credentials = 'config' . DIRECTORY_SEPARATOR . 'credentials.json';
         $this->client->setAuthConfig($credentials);
     }
 

@@ -1,14 +1,14 @@
 <?php
 
-namespace Sk1t0n\HandlingGoogleApiInPhp\Infrastructure;
+namespace Sk1t0n\HandlingGoogleApiInPhp;
 
 use \Dotenv\Dotenv;
-use Sk1t0n\HandlingGoogleApiInPhp\Application\GoogleServiceSheets;
-use Sk1t0n\HandlingGoogleApiInPhp\Domain\Spreadsheet;
+use Sk1t0n\HandlingGoogleApiInPhp\Application\Sheets\GoogleServiceSheets;
+use Sk1t0n\HandlingGoogleApiInPhp\Entities\Spreadsheet;
 
-require_once dirname(__DIR__, 2) . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php';
+require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php';
 
-$dotenv = Dotenv::createUnsafeImmutable(dirname(__DIR__, 2));
+$dotenv = Dotenv::createUnsafeImmutable(dirname(__DIR__));
 $dotenv->load();
 
 $spreadsheetId = getenv('SPREADSHEET_ID');

@@ -1,6 +1,6 @@
 <?php
 
-namespace Sk1t0n\HandlingGoogleApiInPhp\Domain;
+namespace Sk1t0n\HandlingGoogleApiInPhp\Entities;
 
 class Spreadsheet
 {
