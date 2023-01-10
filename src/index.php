@@ -3,8 +3,8 @@
 namespace Sk1t0n\HandlingGoogleApiInPhp;
 
 use \Dotenv\Dotenv;
-use Sk1t0n\HandlingGoogleApiInPhp\Application\Sheets\GoogleServiceSheets;
 use Sk1t0n\HandlingGoogleApiInPhp\Entities\Spreadsheet;
+use Sk1t0n\HandlingGoogleApiInPhp\UseCases\Sheets\GoogleServiceSheets;
 
 require_once dirname(__DIR__) . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php';
 

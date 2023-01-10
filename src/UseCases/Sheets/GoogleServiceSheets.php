@@ -1,6 +1,6 @@
 <?php
 
-namespace Sk1t0n\HandlingGoogleApiInPhp\Application\Sheets;
+namespace Sk1t0n\HandlingGoogleApiInPhp\UseCases\Sheets;
 
 use \GuzzleHttp\Client as GuzzleClient;
 use Sk1t0n\HandlingGoogleApiInPhp\Entities\Spreadsheet;
